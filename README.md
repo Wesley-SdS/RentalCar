@@ -1,66 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><img src="link_para_imagem_do_seu_projeto" alt="Logo do Projeto"></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h1 align="center">Projeto Locadora de Veiculo com Laravel, VueJs e MSQL</h1>
 
-## About Laravel
+<p>Esse projeto demonstra uma locadora funcional com front para locação e painel administrativo para o controle</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>Como Baixar o Projeto</h2>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p>Siga os passos abaixo para clonar o projeto:</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<pre><code>git clone https://github.com/Wesley-SdS/RentalCar
+</code></pre>
 
-## Learning Laravel
+<h2>Configuração do Backend</h2>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<p>Para configurar o backend, siga as instruções abaixo:</p>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<ol>
+  <li>Instale as dependências do projeto:</li>
+</ol>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<pre><code>composer install
+</code></pre>
 
-## Laravel Sponsors
+<ol start="2">
+  <li>Configure as variáveis de ambiente:</li>
+</ol>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<pre><code>cp .env.example .env
+php artisan key:generate
+</code></pre>
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<ol start="4">
+  <li>Crie as migrações das tabelas e os Seeders:</li>
+</ol>
 
-## Code of Conduct
+<pre><code>php artisan migrate --seed
+</code></pre>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<pre><code>php artisan storage:link
+</code></pre>
 
-## License
+<h2>Login</h2>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p>Utilize as seguintes credenciais para fazer o login como usuário de teste:</p>
+
+<ul>
+  <li>Email: admin@example.com</li>
+  <li>Senha: admin</li>
+</ul>
+
+<h2>Configuração do Frontend</h2>
+
+<p>Siga as etapas abaixo para configurar o frontend:</p>
+
+<ol>
+  <li>Atualize as dependências:</li>
+</ol>
+
+<pre><code>npm install
+</code></pre>
+
+
+
+<pre><code>npm run dev
+</code></pre>
+
+<ol start="3">
+  <li>Para executar em ambiente de produção:</li>
+</ol>
+
+<pre><code>npm run build
+</code></pre>
+
+<p>Certifique-se de que tanto o backend quanto o frontend estejam configurados corretamente para obter o máximo aproveitamento deste projeto de exemplo.</p>
+
+<hr>
+
+<p><em>Nota: Certifique-se de ter as versões adequadas do PHP, Composer e Node.js instaladas em seu sistema antes de prosseguir com as etapas de configuração.</em></p>
+
+
